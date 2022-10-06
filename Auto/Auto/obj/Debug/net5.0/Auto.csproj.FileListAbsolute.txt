@@ -1,0 +1,16 @@
+C:\Users\richa\source\repos\Auto\Auto\bin\Debug\net5.0\Auto.exe
+C:\Users\richa\source\repos\Auto\Auto\bin\Debug\net5.0\Auto.deps.json
+C:\Users\richa\source\repos\Auto\Auto\bin\Debug\net5.0\Auto.runtimeconfig.json
+C:\Users\richa\source\repos\Auto\Auto\bin\Debug\net5.0\Auto.runtimeconfig.dev.json
+C:\Users\richa\source\repos\Auto\Auto\bin\Debug\net5.0\Auto.dll
+C:\Users\richa\source\repos\Auto\Auto\bin\Debug\net5.0\ref\Auto.dll
+C:\Users\richa\source\repos\Auto\Auto\bin\Debug\net5.0\Auto.pdb
+C:\Users\richa\source\repos\Auto\Auto\obj\Debug\net5.0\Auto.csprojAssemblyReference.cache
+C:\Users\richa\source\repos\Auto\Auto\obj\Debug\net5.0\Auto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\richa\source\repos\Auto\Auto\obj\Debug\net5.0\Auto.AssemblyInfoInputs.cache
+C:\Users\richa\source\repos\Auto\Auto\obj\Debug\net5.0\Auto.AssemblyInfo.cs
+C:\Users\richa\source\repos\Auto\Auto\obj\Debug\net5.0\Auto.csproj.CoreCompileInputs.cache
+C:\Users\richa\source\repos\Auto\Auto\obj\Debug\net5.0\Auto.dll
+C:\Users\richa\source\repos\Auto\Auto\obj\Debug\net5.0\ref\Auto.dll
+C:\Users\richa\source\repos\Auto\Auto\obj\Debug\net5.0\Auto.pdb
+C:\Users\richa\source\repos\Auto\Auto\obj\Debug\net5.0\Auto.genruntimeconfig.cache
