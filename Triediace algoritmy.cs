@@ -1,4 +1,4 @@
-//InsertionSort
+//Insertion_sort
 int length = 50000;
 int[] arr = new int[length];
 Random random = new Random();
