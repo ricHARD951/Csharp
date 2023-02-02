@@ -67,7 +67,7 @@ static void Bubblesort(int[] arr, int n)
 }
 
 
-//SelectionSort
+//SelectionSort "Dlzka triedenia : 3,7589431 sekund"
 int length = 50000;
 int[] arr = new int[length];
 Random random = new Random();
