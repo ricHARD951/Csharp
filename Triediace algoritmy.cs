@@ -1,4 +1,4 @@
-//InsertionSort
+//InsertionSort "Dlzka triedenia : 2,5896765 sekund"
 int length = 50000;
 int[] arr = new int[length];
 Random random = new Random();
