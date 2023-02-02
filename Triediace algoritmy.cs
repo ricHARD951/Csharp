@@ -108,6 +108,40 @@ static void SelectionSort(int[] arr, int n)
 {
     Console.WriteLine(arr[i]);
 }*/
+int length = 50000;
+int[] arr = new int[length];
+Random random = new Random();
+
+for (int i = 0; i < length; i++)
+{
+    arr[i] = random.Next();
+}
+
+
+var watch = new System.Diagnostics.Stopwatch();
+watch.Start();
+InsertionSort(arr);
+watch.Stop();
+Console.WriteLine($"Dĺžka triedenia : {watch.Elapsed.TotalSeconds} sekund");
+
+
+static void InsertionSort(int[] arr)
+{
+    int n = arr.Length;
+    for (int i = 0; i < n - 1; i++)
+    {
+      
+        int min_idx = i;
+        for (int j = i + 1; j < n; j++)
+            if (arr[j] < arr[min_idx])
+                min_idx = j;
+
+        
+        int temp = arr[min_idx];
+        arr[min_idx] = arr[i];
+        arr[i] = temp;
+    }
+}
 
 
 
