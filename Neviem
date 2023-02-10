@@ -1,0 +1,135 @@
+// See https://aka.ms/new-console-template for more information
+
+using praca_s_file;
+
+string file_path = "..//..//..//Resources//f1_drivers_points.csv";
+string save_file_path = "..//..//..//driver_results.txt";
+
+DriverStats DriverStats = new DriverStats();
+
+DriverStats.LoadCSV();
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace praca_s_file
+{
+    public class F1Driver
+    {
+        public string Name { get; set; }
+        public string Nationality { get; set; }
+        public string Team { get; set; }
+        public int Age { get; set; }
+        public int Points { get; set; }
+        public int DNF { get; set; }
+        public int Wins { get; set; }
+        public int Podiums { get; set; }
+        public int FastestLaps { get; set; }
+        public int DriverOfTheDay { get; set; }
+        public int MostOvertakes { get; set; }
+        public int Poles { get; set; }
+        public int LapsLend { get; set; }
+
+
+        public F1Driver(string _Name, string _Nationality, string _Team,int _Age, int _Points, int _DNF, int _Wins, int _Podiums, int _FastestLaps, int _DriverOfTheDay, int _MostOvertakes, int _Poles, int _LapsLand)
+        {
+            this.Name = _Name;
+            this.Nationality = _Nationality;
+            this.Team = _Team;
+            this.Age = _Age;
+            this.Points = _Points;
+            this.DNF = _DNF;
+            this.Wins = _Wins;
+            this.Podiums = _Podiums;
+            this.FastestLaps = _FastestLaps;
+            this.DriverOfTheDay = _DriverOfTheDay;
+            this.MostOvertakes = _MostOvertakes;
+            this.Poles = _Poles;
+            this.LapsLend = _LapsLand;
+        }
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace praca_s_file
+{
+    public class DriverStats
+    {
+        public List<F1Driver> F1Drivers { get; set; }
+
+        public DriverStats()
+        {
+            F1Drivers = new List<F1Driver>();
+        }
+
+
+        /* public void LoadCSV()
+         {
+             string path = @"..//..//..//Resources//f1_drivers_points.csv";
+             using (StreamReader sr = new StreamReader(path))
+             {
+                 while (!sr.EndOfStream)
+                 {
+                     string line = sr.ReadLine();
+                     Console.WriteLine(line);
+                 }
+             }
+
+         }*/
+        public void LoadCSV()
+        {
+            string path = @"..//..//..//Resources//f1_drivers_points.csv";
+            using (StreamReader sr = new StreamReader(path))
+            {
+                sr.ReadLine();
+                while (!sr.EndOfStream)
+                {
+                    var line = sr.ReadLine();
+                    var values = line.Split(',');
+
+                    var name = values[0];
+                    var nationality = values[1];
+                    var team = values[2];
+                    var age = int.Parse(values[3]);
+                    var points = int.Parse(values[4]);
+                    var dNF = int.Parse(values[5]);
+                    var wins = int.Parse(values[6]);
+                    var podiums = int.Parse(values[7]);
+                    var fastestLaps = int.Parse(values[8]);
+                    var driverOfTheDay = int.Parse(values[9]);
+                    var mostOvertakes = int.Parse(values[10]);
+                    var poles = int.Parse(values[11]);
+                    var lapsLed = int.Parse(values[12]);
+
+
+                }
+
+            }
+
+        }
+        public string MostScoredPoints()
+        {
+
+
+        }
+
+
+    }
+}
+
+
+
+
+
+
+ 
